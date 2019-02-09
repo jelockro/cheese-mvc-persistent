@@ -15,8 +15,8 @@
 
     <tr>
         <th>Name</th>
-        <th>Description</th>
-        <th>Type</th>
+        <th>Link</th>
+
     </tr>
 
     <tr th:each="menu : ${menus}">
@@ -24,9 +24,9 @@
         <td><a th:href="'/menu/view/' + ${menu.getId()}" th:text="${menu.name}">${menu.name}</a></td>
 
     </tr>
-    <a href="/menu/add">Add Menus</a> |
 
 </table>
+<a href="/menu/add">Add Menu</a>
 
 </body>
 </html>
